@@ -1,4 +1,3 @@
-/* Importando fonte do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 * {
@@ -100,9 +99,9 @@ main img {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row; /* Added to stack elements vertically */
-    text-align: center; /* Added to center text */
-    padding: 1em; /* Added padding for better spacing */
+    flex-direction: row;
+    text-align: center;
+    padding: 1em;
 }
 
 #description {
@@ -152,7 +151,6 @@ footer {
     text-align: center;
 }
 
-/* Adicionando responsividade para celulares */
 @media (max-width: 480px) {
 
     header h1 {
@@ -183,7 +181,7 @@ footer {
 
     #description {
         font-size: 14px;
-        padding: 5%; /* Adjusted padding for better fit */
+        padding: 5%;
     }
 
     footer {
@@ -191,7 +189,6 @@ footer {
     }
 }
 
-/* Adicionando responsividade para tablets */
 @media (min-width: 481px) and (max-width: 768px) {
 
     header h1 {
@@ -221,7 +218,7 @@ footer {
 
     #description {
         font-size: 16px;
-        padding: 7%; /* Adjusted padding for better fit */
+        padding: 7%;
     }
 
     footer {
