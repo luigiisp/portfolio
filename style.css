@@ -1,0 +1,235 @@
+/* Importando fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+header {
+    background-color: #282c34;
+    color: white;
+    text-align: center;
+    padding: 1.5em 0;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0.5em 0;
+    font-size: 1.1em;
+}
+
+main {
+    margin-top: 0;
+    max-width: 1500px;
+    margin: auto;
+    padding: 0 2em;
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 2em;
+}
+
+#social-contacts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.contact-link {
+    text-decoration: none;
+}
+
+#social-contacts .contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #f5f5f5;
+    border-radius: 50%;
+}
+
+#instagram {
+    background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#whatsapp {
+    background-color: #25d366;
+}
+
+#linkedin {
+    background-color: #4267b3;
+}
+
+#github {
+    background-color: white;
+}
+
+#profile {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; /* Added to stack elements vertically */
+    text-align: center; /* Added to center text */
+    padding: 1em; /* Added padding for better spacing */
+}
+
+#description {
+    text-align: left;
+    font-size: 20px;
+    padding: 10%;
+}
+
+h2 {
+    color: #282c34;
+    border-bottom: 2px solid #282c34;
+    padding-bottom: 0.5em;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 1.5em;
+    background-color: white;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+li h3 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    color: white;
+    background-color: #282c34;
+    font-size: 0.9em;
+    padding: 1em 0;
+    text-align: center;
+}
+
+/* Adicionando responsividade para celulares */
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header p {
+        font-size: 0.9em;
+    }
+
+    #social-contacts {
+        gap: 1rem;
+    }
+
+    #social-contacts .contact-link {
+        margin-bottom: 1em;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    li {
+        padding: 0.5em;
+    }
+
+    li h3 {
+        font-size: 1em;
+    }
+
+    #description {
+        font-size: 14px;
+        padding: 5%; /* Adjusted padding for better fit */
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+}
+
+/* Adicionando responsividade para tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    header h1 {
+        font-size: 2.2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    #social-contacts {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    #social-contacts .contact-link {
+        margin-bottom: 1em;
+    }
+
+    li {
+        padding: 0.7em;
+    }
+
+    li h3 {
+        font-size: 1.1em;
+    }
+
+    #description {
+        font-size: 16px;
+        padding: 7%; /* Adjusted padding for better fit */
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
+@media  (max-width: 1090px) {
+    #profile {
+        flex-direction: column;
+    }
+}

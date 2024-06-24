@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfólio de Luigi Soares Peixoto</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Luigi Soares Peixoto</h1>
+        <div id="social-contacts">
+            <a target=”_blank” href="https://www.instagram.com/luigiisp/" class="contact-link" id="instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a target=”_blank” style="display: none;" href="#" class="contact-link" id="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a target=”_blank” href="https://www.linkedin.com/in/luigi-peixoto-825291238/" class="contact-link" id="linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+
+            <a target=”_blank” href="https://github.com/luigiisp" class="contact-link" id="github">
+                <i style="color: black;" class="fa-brands fa-github"></i>
+            </a>
+        </div>
+        <p>E-mail: <a href="mailto:luigisp08@gmail.com">luigisp08@gmail.com</a> | Telefone: (84) 98124-4166</p>
+    </header>
+    
+    <main>
+        <section id="profile">
+            <img src="./images/perfil.jpeg" alt="Foto de Luigi Soares Peixoto">
+            <p id="description">Olá! Meu nome é <strong>Luigi</strong>, sou estudante <strong> de Bacharelado em Tecnologia da Informação (BTI)</strong> na <strong> Universidade Federal do Rio Grande do Norte (UFRN)</strong> e atualmente estou no 5º semestre. 
+                Sempre tive um grande interesse pela área de tecnologia e pelo funcionamento dos sistemas.<br>
+                Atualmente, estou focando meus estudos no <strong>desenvolvimento de sistemas web</strong> e estou muito satisfeito com os resultados que tenho alcançado. 
+            Estou em <strong>busca de oportunidades</strong> para aplicar meus conhecimentos de <strong> maneira profissional</strong>. 
+        Além disso, estou <strong>sempre disponível para networking!</strong></p>
+        </section>
+        
+        <section id="formacao">
+            <h2>Formação Acadêmica</h2>
+            <ul>
+                <li>Colégio Nossa Senhora das Neves - Ensino Fundamental (2014 - 2017)</li>
+                <li>Colégio Facex - Ensino Médio (2018 - 2021)</li>
+            </ul>
+        </section>
+        
+        <section id="experiencia">
+            <h2>Experiência Profissional</h2>
+            <ul>
+                <li>
+                    <h3>Garota do Açaí - Atendente (2021 - 2023)</h3>
+                    <ul>
+                        <li>Atendimento ao cliente, gestão de pedidos e caixa.</li>
+                        <li>Responsável pela manutenção da organização e limpeza do espaço.</li>
+                        <li>Desenvolvimento de habilidades de comunicação e trabalho em equipe.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="conhecimentos">
+            <h2>Conhecimentos Técnicos</h2>
+            <ul>
+                <li>Linguagens de Programação: C/C++, Java, Python, JavaScript.</li>
+                <li>Desenvolvimento Web: HTML, CSS, Node.js, Express.js.</li>
+                <li>Frameworks e Bibliotecas: Spring (Spring Boot), Hibernate.</li>
+                <li>Bancos de Dados: MySQL, JPA (Java Persistence API).</li>
+                <li>Ferramentas e Metodologias: Git.</li>
+            </ul>
+        </section>
+        
+        <section id="projetos">
+            <h2>Projetos Pessoais</h2>
+            <ul>
+                <li>
+                    <h3>Media Player</h3>
+                    <p>Projeto de desenvolvimento de um reprodutor de músicas com suporte a arquivos mp3. Utilizou-se Java e JavaFX para a criação de uma interface intuitiva e funcionalidades robustas.</p>
+                    <p><a href="https://github.com/luigiisp/MediaPlayerProject">GitHub: MediaPlayerProject</a></p>
+                </li>
+                <li>
+                    <h3>Rate Website</h3>
+                    <p>Em desenvolvimento, o projeto visa criar um site de ranqueamento de filmes com interação entre usuários. Utiliza tecnologias como JavaScript, CSS, HTML, Node.js e Express.js, além de consumir APIs externas.</p>
+                    <p><a href="https://github.com/luigiisp/MoviesRating-web">GitHub: MoviesRating-web</a></p>
+                </li>
+            </ul>
+        </section>
+        
+        <section id="formacao-complementar">
+            <h2>Formação Complementar</h2>
+            <ul>
+                <li>Curso de Inglês Básico – Ágora/UFRN (em andamento).</li>
+                <li>Certificado de Criação de uma Aplicação Java com Spring Boot - Rocketseat</li>
+            </ul>
+        </section>
+        
+        <section id="informacoes-adicionais">
+            <h2>Informações Adicionais</h2>
+            <ul>
+                <li>Interesse em estágios e oportunidades de trabalho.</li>
+                <li>Sempre disposto a aprender coisas novas.</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Luigi Soares Peixoto</p>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const header = document.querySelector('header');
+            const main = document.querySelector('main');
+            const headerOffset = header.offsetHeight;
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > headerOffset) {
+                    header.classList.add('fixed');
+                    main.style.marginTop = `${headerOffset}px`; // Compensar a altura do header fixo
+                } else {
+                    header.classList.remove('fixed');
+                    main.style.marginTop = '0'; // Remover a margem superior quando o header não estiver fixo
+                }
+            });
+        });
+    </script>
+</body>
+</html>
