@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Portfólio de Luigi Soares Peixoto</title>
+    <title>Portfólio - Luigi Soares Peixoto</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
                 <i style="color: black;" class="fa-brands fa-github"></i>
             </a>
         </div>
-        <p>E-mail: <a href="mailto:luigisp08@gmail.com">luigisp08@gmail.com</a> | Telefone: (84) 98124-4166</p>
+        <p>E-mail: <a id="mail" href="mailto:luigisp08@gmail.com">luigisp08@gmail.com</a> | Telefone: (84) 98124-4166</p>
     </header>
     
     <main>
@@ -41,19 +41,11 @@
         Além disso, estou <strong>sempre disponível para networking!</strong></p>
         </section>
         
-        <section id="formacao">
-            <h2>Formação Acadêmica</h2>
-            <ul>
-                <li>Colégio Nossa Senhora das Neves - Ensino Fundamental (2014 - 2017)</li>
-                <li>Colégio Facex - Ensino Médio (2018 - 2021)</li>
-            </ul>
-        </section>
-        
         <section id="experiencia">
             <h2>Experiência Profissional</h2>
             <ul>
                 <li>
-                    <h3>Garota do Açaí - Atendente (2021 - 2023)</h3>
+                    <h3><a target=”_blank” href="https://www.instagram.com/garotadoacai/">Garota do Açaí - Atendente (2021 - 2023)</a></h3>
                     <ul>
                         <li>Atendimento ao cliente, gestão de pedidos e caixa.</li>
                         <li>Responsável pela manutenção da organização e limpeza do espaço.</li>
@@ -78,14 +70,26 @@
             <h2>Projetos Pessoais</h2>
             <ul>
                 <li>
-                    <h3>Media Player</h3>
-                    <p>Projeto de desenvolvimento de um reprodutor de músicas com suporte a arquivos mp3. Utilizou-se Java e JavaFX para a criação de uma interface intuitiva e funcionalidades robustas.</p>
-                    <p><a href="https://github.com/luigiisp/MediaPlayerProject">GitHub: MediaPlayerProject</a></p>
+                    <h3>Rate Website</h3>
+                    <p>Sistema web de avaliação de filmes e séries. Conta com um catálogo de obras com diversar informações, e os usuários podem interagir as avaliando e detalhando sua opinião. 
+                        <br>Desenvolvido com JavaScript, CSS, HTML, Node.js e Express.js, além de consumir APIs externas (TMDB API).</p>
+                    <p><a target=”_blank” href="https://github.com/luigiisp/MoviesRating-web">Repositório no GitHub</a></p>
                 </li>
                 <li>
-                    <h3>Rate Website</h3>
-                    <p>Em desenvolvimento, o projeto visa criar um site de ranqueamento de filmes com interação entre usuários. Utiliza tecnologias como JavaScript, CSS, HTML, Node.js e Express.js, além de consumir APIs externas.</p>
-                    <p><a href="https://github.com/luigiisp/MoviesRating-web">GitHub: MoviesRating-web</a></p>
+                    <h3>Media Player</h3>
+                    <p>Reprodutor de músicas com suporte a arquivos mp3, com interface gráfica intuitiva e com multiplas funcionalidades robustas.
+                        <br>Desenvolvido com Java e JavaFX.</p>
+                    <p><a target=”_blank” href="https://github.com/luigiisp/MediaPlayerProject">Repositório no GitHub</a></p>
+                </li>
+                <li>
+                    <h3>Atribuição de candidatos a vagas - Grafos</h3>
+                    <p>Projeto de modelagem de um problema real em grafos. Propomos uma solução utilizando emparelhamento máximo em grafos bipartidos para o problema de atribuir 
+                        candidatos a vagas em processos seletivos. O projeto consiste da modelagem do problema, 
+                        revisão do estado-da-arte e a implementação do algoritmo.
+                       <br>Algoritmo de emparelhamento desenvolvido em Python</p>
+                    <p><a target=”_blank” href="https://docs.google.com/document/d/e/2PACX-1vR1
+                        VZfl1JPEn_oGx0fA6-G35gxGQP4KVGaGvwr-25HaSQq02mPcKp75hvbNMo1Lnn04JKLufL6sUCag/pub">Relatório</a></p>
+                    <p><a target=”_blank” href="https://github.com/luigiisp/Max_Matching_Bipartite">Repositório no GitHub (Algoritmo)</a></p>
                 </li>
             </ul>
         </section>
@@ -120,10 +124,10 @@
             window.addEventListener('scroll', function () {
                 if (window.scrollY > headerOffset) {
                     header.classList.add('fixed');
-                    main.style.marginTop = `${headerOffset}px`; // Compensar a altura do header fixo
+                    main.style.marginTop = `${headerOffset}px`;
                 } else {
                     header.classList.remove('fixed');
-                    main.style.marginTop = '0'; // Remover a margem superior quando o header não estiver fixo
+                    main.style.marginTop = '0';
                 }
             });
         });
